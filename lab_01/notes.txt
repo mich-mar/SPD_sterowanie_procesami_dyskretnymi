@@ -1,0 +1,11 @@
+> volatile - mówimy kompilatorowi, że kompilator nie może zakładać że zna wartość tej zmiennej
+
+> Mutex (std::mutex): A mutex is a synchronization primitive that is used to protect shared data from
+being accessed simultaneously by multiple threads. When one thread locks a mutex,
+other threads must wait until it's unlocked.
+
+> Scoped Lock (std::scoped_lock): This is a C++17 feature that simplifies the locking and unlocking
+process. It automatically locks the mutex when the std::scoped_lock object is created and automatically
+unlocks the mutex when it goes out of scope (i.e., when the function call or block of code finishes).
+This is similar to the pattern of using mutex.lock() and mutex.unlock() manually, but std::scoped_lock
+helps avoid mistakes like forgetting to unlock the mutex.
