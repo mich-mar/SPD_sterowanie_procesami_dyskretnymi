@@ -1,4 +1,5 @@
 #include "alg_01_heuristic.h"
+#include "alg_02_brute_force.h"
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -34,6 +35,12 @@ std::vector<task> loadTasksFromFile(const std::string &filename) {
     return tasks;
 }
 
+/**
+ * @brief Funkcja readCorrectOutcome wczytuje poprawny wynik z pliku.
+ *
+ * @param fileName Nazwa pliku, z którego ma być wczytany wynik.
+ * @return Poprawny wynik jako liczba całkowita.
+ */
 int readCorrectOutcome(const std::string& fileName) {
     std::ifstream inputFile("data/" + fileName);
 
@@ -51,17 +58,20 @@ int readCorrectOutcome(const std::string& fileName) {
 }
 
 int main() {
-    std::string name = "SCHRAGE2";
+    std::string name = "SCHRAGE1";
     std::string datFile = name + ".dat";
     std::string outFile = name + ".out";
 
     std::vector<task> tasks = loadTasksFromFile(datFile);
     int correctAnswer = readCorrectOutcome(outFile);
 
-    int heurCmax = heuristic(tasks);
-    std::cout << "Heurystyczne Cmax: " << heurCmax << std::endl;
+    // int heurCmax = heuristic(tasks);
+    // std::cout << "Heurystyczne Cmax: " << heurCmax << std::endl;
 
-    if (correctAnswer == heurCmax) {
+    int bruteCmax = bruteForce(tasks);
+    std::cout << "Przegld zupełny Cmax: " << bruteCmax << std::endl;
+
+    if (correctAnswer == bruteCmax) {
         std::cout << "Odpowiedz prawidłowa :))" << std::endl;
     }
     else {
