@@ -8,6 +8,6 @@
 #include <climits>
 #include "task_struct.h"
 
-int heuristic(std::vector<task> tasks);
+int heuristicPlaning(std::vector<task> tasks);
 
 #endif //ALG_01_HEURISTIC_H

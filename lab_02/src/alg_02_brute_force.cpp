@@ -8,7 +8,6 @@
  */
 int bruteForce(std::vector<task> tasks) {
     int min_cmax = INT_MAX;
-    std::vector<task> best_schedule;
 
     // Sortowanie początkowe wymagane przez next_permutation
     sort(tasks.begin(), tasks.end(), [](const task &a, const task &b) {
@@ -28,7 +27,6 @@ int bruteForce(std::vector<task> tasks) {
         // Aktualizacja minimalnego Cmax i najlepszego harmonogramu
         if (current_cmax < min_cmax) {
             min_cmax = current_cmax;
-            best_schedule = tasks;
         }
     } while (next_permutation(tasks.begin(), tasks.end(), [](const task &a, const task &b) {
         return a.id < b.id;

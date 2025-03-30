@@ -2,13 +2,13 @@
 
 /**
  * @brief Funkcja heuristic implementuje heurystyczne podejście do problemu harmonogramowania zadań.
- * Zadania są sortowane według czasu dostępności (r_j), a następnie wybierane jest zadanie z największym czasem zakończenia (q_j).
+ * Zadania są sortowane według czasu dostępności (r), a następnie wybierane jest zadanie z największym czasem zakończenia (q).
  *
  * @param tasks Wektor zadań do przetworzenia, gdzie każde zadanie ma pola r (czas dostępności), p (czas przetwarzania) i q (czas zakończenia).
  * @return Maksymalny czas zakończenia (Cmax) wszystkich zadań.
  */
-int heuristic(std::vector<task> tasks) {
-    // Sortowanie zadań według czasu dostępności (r_j)
+int heuristicPlaning(std::vector<task> tasks) {
+    // Sortowanie zadań według czasu dostępności (r)
     sort(tasks.begin(), tasks.end(), [](const task &a, const task &b) { return a.r < b.r; });
 
 

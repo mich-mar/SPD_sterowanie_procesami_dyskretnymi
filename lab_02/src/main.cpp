@@ -65,13 +65,13 @@ int main() {
     std::vector<task> tasks = loadTasksFromFile(datFile);
     int correctAnswer = readCorrectOutcome(outFile);
 
-    // int heurCmax = heuristic(tasks);
-    // std::cout << "Heurystyczne Cmax: " << heurCmax << std::endl;
+    int heurCmax = heuristicPlaning(tasks);
+    std::cout << "Heurystyczne Cmax: " << heurCmax << std::endl;
 
-    int bruteCmax = bruteForce(tasks);
-    std::cout << "Przegld zupełny Cmax: " << bruteCmax << std::endl;
+    // int bruteCmax = bruteForce(tasks);
+    // std::cout << "Przegld zupełny Cmax: " << bruteCmax << std::endl;
 
-    if (correctAnswer == bruteCmax) {
+    if (correctAnswer == heurCmax) {
         std::cout << "Odpowiedz prawidłowa :))" << std::endl;
     }
     else {
