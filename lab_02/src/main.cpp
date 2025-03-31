@@ -4,8 +4,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
-
-// @todo: SCHRAGE2.dat ma takie same dane jak SCHRAGE1.dat, SCHRAGE1.out i SCHRAGE1.out są różne
+#include <chrono>
 
 /**
  * @brief Funkcja loadTasksFromFile wczytuje dane z pliku i tworzy wektor zadań.
@@ -57,6 +56,22 @@ int readCorrectOutcome(const std::string& fileName) {
     return number;
 }
 
+/**
+ * @brief Funkcja measureExecutionTime mierzy czas wykonania funkcji.
+ *
+ * @param func Funkcja do wykonania.
+ * @param tasks Wektor zadań przekazywany do funkcji.
+ * @return Para zawierająca wynik funkcji oraz czas jej wykonania w sekundach.
+ */
+template <typename Func>
+std::pair<int, double> measureExecutionTime(Func func, std::vector<task>& tasks) {
+    auto start = std::chrono::high_resolution_clock::now();
+    int result = func(tasks);
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsed = end - start;
+    return {result, elapsed.count()};
+}
+
 int main() {
     std::string name = "SCHRAGE1";
     std::string datFile = name + ".dat";
@@ -65,11 +80,22 @@ int main() {
     std::vector<task> tasks = loadTasksFromFile(datFile);
     int correctAnswer = readCorrectOutcome(outFile);
 
-    int heurCmax = heuristicPlaning(tasks);
-    std::cout << "Heurystyczne Cmax: " << heurCmax << std::endl;
+    auto [bruteCmax, elapsed_brute] = measureExecutionTime(bruteForce, tasks);
+    std::cout << "Przegląd zupełny Cmax: " << bruteCmax << std::endl;
+    std::cout << "Czas działania algorytmu brute force: " << elapsed_brute << " sekund" << std::endl;
 
-    // int bruteCmax = bruteForce(tasks);
-    // std::cout << "Przegld zupełny Cmax: " << bruteCmax << std::endl;
+    if (correctAnswer == bruteCmax) {
+        std::cout << "Odpowiedz prawidłowa :))" << std::endl;
+    }
+    else {
+        std::cout << "Zły output :((, prawidłowy to: " << correctAnswer << std::endl;
+    }
+
+    std::cout << std::endl;
+
+    auto [heurCmax, elapsed_heur] = measureExecutionTime(heuristicPlaning, tasks);
+    std::cout << "Heurystyczne Cmax: " << heurCmax << std::endl;
+    std::cout << "Czas działania algorytmu heurystycznego: " << elapsed_heur << " sekund" << std::endl;
 
     if (correctAnswer == heurCmax) {
         std::cout << "Odpowiedz prawidłowa :))" << std::endl;
