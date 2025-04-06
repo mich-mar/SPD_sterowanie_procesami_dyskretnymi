@@ -346,6 +346,11 @@ CMakeFiles/lab_02.dir/src/alg_01_schrage.cpp.o: ../src/alg_01_schrage.cpp \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_queue.h \
   ../inc/task_struct.h
 
 CMakeFiles/lab_02.dir/src/alg_02_brute_force.cpp.o: ../src/alg_02_brute_force.cpp \
@@ -802,6 +807,11 @@ CMakeFiles/lab_02.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_queue.h \
   ../inc/task_struct.h \
   ../inc/alg_02_brute_force.h \
   ../inc/alg_00_heuristic.h \
@@ -821,6 +831,8 @@ CMakeFiles/lab_02.dir/src/main.cpp.o: ../src/main.cpp \
 ../src/main.cpp:
 
 ../inc/alg_02_brute_force.h:
+
+/usr/include/c++/11/bits/stl_deque.h:
 
 ../src/alg_02_brute_force.cpp:
 
@@ -948,6 +960,8 @@ CMakeFiles/lab_02.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/exception:
 
+/usr/include/c++/11/queue:
+
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
@@ -989,6 +1003,8 @@ CMakeFiles/lab_02.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/c++/11/bits/stl_queue.h:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
@@ -1160,6 +1176,8 @@ CMakeFiles/lab_02.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
+/usr/include/c++/11/deque:
+
 /usr/include/c++/11/ios:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
@@ -1261,6 +1279,8 @@ CMakeFiles/lab_02.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/c++/11/pstl/execution_defs.h:
+
+/usr/include/c++/11/bits/deque.tcc:
 
 /usr/include/c++/11/algorithm:
 
