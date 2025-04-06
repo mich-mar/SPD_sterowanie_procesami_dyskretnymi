@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/build",
+  "command": "/usr/bin/c++  -I/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/inc  -Wall -Wextra -Wpedantic -g -g -std=gnu++17 -o CMakeFiles/lab_02.dir/src/alg_00_heuristic.cpp.o -c /home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/alg_00_heuristic.cpp",
+  "file": "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/alg_00_heuristic.cpp"
+},
+{
+  "directory": "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/build",
+  "command": "/usr/bin/c++  -I/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/inc  -Wall -Wextra -Wpedantic -g -g -std=gnu++17 -o CMakeFiles/lab_02.dir/src/alg_01_schrage.cpp.o -c /home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/alg_01_schrage.cpp",
+  "file": "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/alg_01_schrage.cpp"
+},
+{
+  "directory": "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/build",
+  "command": "/usr/bin/c++  -I/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/inc  -Wall -Wextra -Wpedantic -g -g -std=gnu++17 -o CMakeFiles/lab_02.dir/src/alg_02_brute_force.cpp.o -c /home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/alg_02_brute_force.cpp",
+  "file": "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/alg_02_brute_force.cpp"
+},
+{
+  "directory": "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/build",
+  "command": "/usr/bin/c++  -I/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/inc  -Wall -Wextra -Wpedantic -g -g -std=gnu++17 -o CMakeFiles/lab_02.dir/src/main.cpp.o -c /home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/main.cpp",
+  "file": "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/main.cpp"
+}
+]

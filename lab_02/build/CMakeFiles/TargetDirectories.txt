@@ -1,0 +1,4 @@
+/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/build/CMakeFiles/lab_02.dir
+/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/build/CMakeFiles/copy_data_files.dir
+/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/build/CMakeFiles/edit_cache.dir
+/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/build/CMakeFiles/rebuild_cache.dir

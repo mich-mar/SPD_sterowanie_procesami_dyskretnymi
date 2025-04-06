@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Wpedantic -g -g CMakeFiles/lab_02.dir/src/alg_00_heuristic.cpp.o CMakeFiles/lab_02.dir/src/alg_01_schrage.cpp.o CMakeFiles/lab_02.dir/src/alg_02_brute_force.cpp.o CMakeFiles/lab_02.dir/src/main.cpp.o -o lab_02 
