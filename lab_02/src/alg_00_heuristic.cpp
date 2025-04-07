@@ -2,34 +2,36 @@
 #include <vector>
 #include <algorithm>
 
-int qjSortPlaning(std::vector<task> tasks) {
-    // Sortowanie zadań według q (malejąco)
-    sort(tasks.begin(), tasks.end(), [](const task &a, const task &b) {
-        return a.q > b.q;
-    });
+#include <vector>
+#include <queue>
+#include <algorithm>
+#include "task_struct.h"  // Zakładam, że ten plik zawiera definicję struct task
 
-    int currentTime = 0, Cmax = 0;
+// Funkcja do obliczenia Cmax
+int calculateCmax(std::vector<task>& tasks) {
+    int currentTime = 0;
+    int cmax = 0;
 
-    for (const auto &t : tasks) {
-        currentTime += t.p;  // Przetwarzamy zadanie
-        Cmax = std::max(Cmax, currentTime + t.q); // Aktualizacja Cmax
+    for (auto& t : tasks) {
+        currentTime = std::max(currentTime, t.r) + t.p;  // Zadanie zaczyna się po jego dostępności
+        cmax = std::max(cmax, currentTime);              // Aktualizuj maksymalny czas zakończenia
     }
 
-    return Cmax;
+    return cmax;
 }
 
-int rjSortPlaning(std::vector<task> tasks) {
-    // Sortowanie zadań według r (rosnąco)
-    sort(tasks.begin(), tasks.end(), [](const task &a, const task &b) {
-        return a.r < b.r;
+// Heurystyka: sortowanie po rj (czas dostępności) i obliczanie Cmax
+int rjSortPlaning(std::vector<task> &tasks) {
+    sort(tasks.begin(), tasks.end(), [](const task& t1, const task& t2) {
+        return t1.r < t2.r;  // Sortowanie rosnąco po rj
     });
+    return calculateCmax(tasks);  // Zwracamy Cmax po sortowaniu
+}
 
-    int currentTime = 0, Cmax = 0;
-
-    for (const auto &t : tasks) {
-        currentTime = std::max(currentTime, t.r) + t.p;  // Start po dostępności i wykonanie zadania
-        Cmax = std::max(Cmax, currentTime + t.q); // Aktualizacja Cmax
-    }
-
-    return Cmax;
+// Heurystyka: sortowanie po qj (czas zakończenia) i obliczanie Cmax
+int qjSortPlaning(std::vector<task>& tasks) {
+    sort(tasks.begin(), tasks.end(), [](const task& t1, const task& t2) {
+        return t1.q < t2.q;  // Sortowanie rosnąco po qj
+    });
+    return calculateCmax(tasks);  // Zwracamy Cmax po sortowaniu
 }

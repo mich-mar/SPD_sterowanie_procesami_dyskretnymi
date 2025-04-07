@@ -6,8 +6,12 @@
 #include <algorithm>
 #include <fstream>
 #include <climits>
+#include <queue>
+
 #include "task_struct.h"
 
-int heuristicPlaning(std::vector<task> tasks);
+int schragePlaning(std::vector<task> tasks);
+
+int schragePreemptivePlaning(std::vector<task> tasks);
 
 #endif //ALG_01_HEURISTIC_H
