@@ -191,4 +191,7 @@ CMakeFiles/lab_02.dir/src/main.cpp.o: \
  /home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/inc/alg_00_heuristic.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/limits /usr/include/c++/11/ctime \
- /usr/include/c++/11/bits/parse_numbers.h
+ /usr/include/c++/11/bits/parse_numbers.h \
+ /home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/inc/alg_03_wspt.h \
+ /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/bit /usr/include/c++/11/pstl/glue_numeric_defs.h

@@ -214,6 +214,30 @@ src/alg_02_brute_force.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/src/alg_02_brute_force.cpp.s
 .PHONY : src/alg_02_brute_force.cpp.s
 
+src/alg_03_wspt.o: src/alg_03_wspt.cpp.o
+.PHONY : src/alg_03_wspt.o
+
+# target to build an object file
+src/alg_03_wspt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/src/alg_03_wspt.cpp.o
+.PHONY : src/alg_03_wspt.cpp.o
+
+src/alg_03_wspt.i: src/alg_03_wspt.cpp.i
+.PHONY : src/alg_03_wspt.i
+
+# target to preprocess a source file
+src/alg_03_wspt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/src/alg_03_wspt.cpp.i
+.PHONY : src/alg_03_wspt.cpp.i
+
+src/alg_03_wspt.s: src/alg_03_wspt.cpp.s
+.PHONY : src/alg_03_wspt.s
+
+# target to generate assembly for a file
+src/alg_03_wspt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/src/alg_03_wspt.cpp.s
+.PHONY : src/alg_03_wspt.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -257,6 +281,9 @@ help:
 	@echo "... src/alg_02_brute_force.o"
 	@echo "... src/alg_02_brute_force.i"
 	@echo "... src/alg_02_brute_force.s"
+	@echo "... src/alg_03_wspt.o"
+	@echo "... src/alg_03_wspt.i"
+	@echo "... src/alg_03_wspt.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

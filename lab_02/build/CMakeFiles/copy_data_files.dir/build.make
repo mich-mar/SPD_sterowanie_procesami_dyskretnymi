@@ -68,8 +68,6 @@ include CMakeFiles/copy_data_files.dir/progress.make
 
 CMakeFiles/copy_data_files: ../data/SCHRAGE1.dat
 CMakeFiles/copy_data_files: ../data/SCHRAGE1.out
-CMakeFiles/copy_data_files: ../data/SCHRAGE10.dat
-CMakeFiles/copy_data_files: ../data/SCHRAGE10.out
 CMakeFiles/copy_data_files: ../data/SCHRAGE2.dat
 CMakeFiles/copy_data_files: ../data/SCHRAGE2.out
 CMakeFiles/copy_data_files: ../data/SCHRAGE3.dat
@@ -80,14 +78,12 @@ CMakeFiles/copy_data_files: ../data/SCHRAGE5.dat
 CMakeFiles/copy_data_files: ../data/SCHRAGE5.out
 CMakeFiles/copy_data_files: ../data/SCHRAGE6.dat
 CMakeFiles/copy_data_files: ../data/SCHRAGE6.out
-CMakeFiles/copy_data_files: ../data/SCHRAGE7.DAT
 CMakeFiles/copy_data_files: ../data/SCHRAGE7.dat
 CMakeFiles/copy_data_files: ../data/SCHRAGE7.out
 CMakeFiles/copy_data_files: ../data/SCHRAGE8.dat
 CMakeFiles/copy_data_files: ../data/SCHRAGE8.out
 CMakeFiles/copy_data_files: ../data/SCHRAGE9.dat
 CMakeFiles/copy_data_files: ../data/SCHRAGE9.out
-CMakeFiles/copy_data_files: ../data/test.dat
 
 copy_data_files: CMakeFiles/copy_data_files
 copy_data_files: CMakeFiles/copy_data_files.dir/build.make

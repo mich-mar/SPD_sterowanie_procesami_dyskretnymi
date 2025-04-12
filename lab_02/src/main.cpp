@@ -6,6 +6,7 @@
 #include <vector>
 #include <string>
 #include <chrono>
+#include "alg_03_wspt.h"
 
 /**
  * @brief Funkcja loadTasksFromFile wczytuje dane z pliku i tworzy wektor zadań.
@@ -111,11 +112,14 @@ int main()
 
         std::cout << std::endl;
 
-        // auto [bruteCmax, elapsed_brute] = measureExecutionTime(bruteForce, tasks);
-        // std::cout << "Brute force Cmax: " << bruteCmax << std::endl;
-        // std::cout << "Czas działania algorytmu brute force: " << elapsed_brute << " sekund" << std::endl;
+        if (i <= 2)
+        {
+            auto [bruteCmax, elapsed_brute] = measureExecutionTime(bruteForce, tasks);
+            std::cout << "Brute force Cmax: " << bruteCmax << std::endl;
+            std::cout << "Czas działania algorytmu brute force: " << elapsed_brute << " sekund" << std::endl;
 
-        // std::cout << std::endl;
+            std::cout << std::endl;
+        }
 
         auto [schargeCmax, elapsed_schrage] = measureExecutionTime(schragePlaning, tasks);
         std::cout << "Scharge Cmax: " << schargeCmax << std::endl;
@@ -126,6 +130,12 @@ int main()
         auto [schargePreemptiveCmax, elapsed_schragePreemptive] = measureExecutionTime(schragePreemptivePlaning, tasks);
         std::cout << "SchargePreemptive Cmax: " << schargePreemptiveCmax << std::endl;
         std::cout << "Czas działania algorytmu Scharge z wywłaszczeniem: " << elapsed_schragePreemptive << " sekund" << std::endl;
+
+        std::cout << std::endl;
+
+        auto [WSPTCmax, elapsed_WSPT] = measureExecutionTime(weightedSPTPlaning, tasks);
+        std::cout << "WSPT Cmax: " << WSPTCmax << std::endl;
+        std::cout << "Czas działania algorytmu WSPT: " << elapsed_WSPT << " sekund" << std::endl;
 
         // if (correctAnswer == schargeCmax)
         // {

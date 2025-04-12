@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/lab_02.dir/src/alg_01_schrage.cpp.o.d"
   "CMakeFiles/lab_02.dir/src/alg_02_brute_force.cpp.o"
   "CMakeFiles/lab_02.dir/src/alg_02_brute_force.cpp.o.d"
+  "CMakeFiles/lab_02.dir/src/alg_03_wspt.cpp.o"
+  "CMakeFiles/lab_02.dir/src/alg_03_wspt.cpp.o.d"
   "CMakeFiles/lab_02.dir/src/main.cpp.o"
   "CMakeFiles/lab_02.dir/src/main.cpp.o.d"
   "lab_02"

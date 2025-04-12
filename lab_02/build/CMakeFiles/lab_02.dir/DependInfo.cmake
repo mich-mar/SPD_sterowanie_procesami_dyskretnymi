@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/alg_00_heuristic.cpp" "CMakeFiles/lab_02.dir/src/alg_00_heuristic.cpp.o" "gcc" "CMakeFiles/lab_02.dir/src/alg_00_heuristic.cpp.o.d"
   "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/alg_01_schrage.cpp" "CMakeFiles/lab_02.dir/src/alg_01_schrage.cpp.o" "gcc" "CMakeFiles/lab_02.dir/src/alg_01_schrage.cpp.o.d"
   "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/alg_02_brute_force.cpp" "CMakeFiles/lab_02.dir/src/alg_02_brute_force.cpp.o" "gcc" "CMakeFiles/lab_02.dir/src/alg_02_brute_force.cpp.o.d"
+  "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/alg_03_wspt.cpp" "CMakeFiles/lab_02.dir/src/alg_03_wspt.cpp.o" "gcc" "CMakeFiles/lab_02.dir/src/alg_03_wspt.cpp.o.d"
   "/home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/lab_02/src/main.cpp" "CMakeFiles/lab_02.dir/src/main.cpp.o" "gcc" "CMakeFiles/lab_02.dir/src/main.cpp.o.d"
   )
 
