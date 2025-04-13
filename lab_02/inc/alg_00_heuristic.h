@@ -4,10 +4,8 @@
 #include <vector>
 #include <algorithm>
 
-int rjSortPlaning(std::vector<task> &tasks);
+int rjSortPlaning(std::vector<task> tasks);
 
-int qjSortPlaning(std::vector<task> &tasks);
-
-int calculateCmax(std::vector<task> &tasks);
+int qjSortPlaning(std::vector<task> tasks);
 
 #endif //ALG_00_HEURISTIC_H

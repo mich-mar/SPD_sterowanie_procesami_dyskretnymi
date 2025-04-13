@@ -1,35 +1,47 @@
 #include "alg_03_wspt.h"
+#include <algorithm>
+#include <vector>
+#include "task_struct.h"
 
 /**
- * @brief Weighted Shortest Processing Time (WSPT) algorithm
- * 
- * This is a variation of SPT that takes into account both processing time
- * and delivery time to prioritize tasks. It calculates a priority value
- * based on a weighted combination of p and q.
- * 
- * @param tasks Vector of tasks to be scheduled
- * @return Maximum completion time (Cmax)
+ * @brief Algorytm Ważonego Najkrótszego Czasu Przetwarzania (WSPT)
+ *
+ * Jest to wariant algorytmu SPT, który uwzględnia zarówno czas przetwarzania,
+ * jak i czas dostarczenia do ustalenia priorytetów zadań. Oblicza wartość priorytetu
+ * na podstawie ważonej kombinacji p i q.
+ *
+ * @param tasks Wektor zadań do zaplanowania
+ * @return Maksymalny czas zakończenia (Cmax)
  */
-int weightedSPTPlaning(std::vector<task>& tasks) {
-    if (tasks.empty()) return 0;
-    
-    // Sort tasks by a weighted priority formula
+int weightedSPTPlaning(std::vector<task> tasks) {
+    if (tasks.empty()) {
+        return 0;
+    }
+
+    // Sortowanie zadań według wzoru ważonego priorytetu
     std::sort(tasks.begin(), tasks.end(), [](const task& a, const task& b) {
-        // Lower value = higher priority
-        // This formula prioritizes tasks with low p and high q
+        // Niższa wartość = wyższy priorytet
+        // Ta formuła priorytetyzuje zadania z niskim p i wysokim q
         return (a.p - 0.5 * a.q) < (b.p - 0.5 * b.q);
     });
-    
+
     int currentTime = 0;
-    int cmax = 0;
-    
-    // Schedule tasks according to priority
+    int Cmax = 0;
+
+    // Planowanie zadań zgodnie z priorytetem
     for (const auto& t : tasks) {
-        currentTime = std::max(currentTime, t.r);
+        // Jeśli zadanie nie jest jeszcze dostępne, czekamy
+        if (currentTime < t.r) {
+            currentTime = t.r;
+        }
+
+        // Wykonanie zadania
         currentTime += t.p;
+
+        // Obliczenie czasu zakończenia i aktualizacja Cmax
         int completionTime = currentTime + t.q;
-        cmax = std::max(cmax, completionTime);
+        Cmax = std::max(Cmax, completionTime);
     }
-    
-    return cmax;
+
+    return Cmax;
 }

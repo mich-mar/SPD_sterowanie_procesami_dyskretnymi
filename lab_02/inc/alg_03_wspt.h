@@ -6,6 +6,6 @@
 #include <numeric>
 #include "task_struct.h"
 
-int weightedSPTPlaning(std::vector<task>& tasks);
+int weightedSPTPlaning(std::vector<task> tasks);
 
 #endif

@@ -87,7 +87,6 @@ int main()
 
     for (int i = 1; i < 10; i++)
     {
-
         std::string datFile = name + std::to_string(i) + ".dat";
         std::string outFile = name + std::to_string(i) + ".out";
 
@@ -137,16 +136,8 @@ int main()
         std::cout << "WSPT Cmax: " << WSPTCmax << std::endl;
         std::cout << "Czas działania algorytmu WSPT: " << elapsed_WSPT << " sekund" << std::endl;
 
-        // if (correctAnswer == schargeCmax)
-        // {
-        //     std::cout << "Odpowiedz prawidłowa :))" << std::endl;
-        // }
-        // else
-        // {
-        //     std::cout << "Zły output :((, prawidłowy to: " << correctAnswer << std::endl;
-        // }
-
         std::cout << std::endl;
     }
+
     return 0;
 }
