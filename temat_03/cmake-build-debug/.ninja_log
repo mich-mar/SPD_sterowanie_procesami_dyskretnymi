@@ -1,0 +1,7 @@
+# ninja log v6
+2	788	1745834751645780149	CMakeFiles/scheduler.dir/src/main.cpp.o	190801b9ecf1d2ea
+3	1059	1745834751646780209	CMakeFiles/scheduler.dir/src/task.cpp.o	56a08c1894eeae42
+3	1618	1745834751646780209	CMakeFiles/scheduler.dir/src/scheduler.cpp.o	43588fa281e1f10c
+1618	1756	1745834753261877479	scheduler	83a238908bb566ed
+4	797	1745834844184084379	CMakeFiles/scheduler.dir/src/main.cpp.o	190801b9ecf1d2ea
+798	906	1745834844978112520	scheduler	83a238908bb566ed

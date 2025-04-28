@@ -31,17 +31,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_02.dir/src/alg_00_heuristic.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_02.dir/src/alg_00_heuristic.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_02.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_02.dir/src/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_02.dir/src/alg_01_schrage.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab_02.dir/src/alg_01_schrage.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab_02" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab_02" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/alg_00_heuristic.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/alg_00_heuristic.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/alg_03_wspt.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/alg_03_wspt.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alg_00_heuristic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/alg_00_heuristic.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/alg_01_schrage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/alg_01_schrage.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alg_02_brute_force.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/alg_02_brute_force.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alg_03_wspt.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/alg_03_wspt.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,11 +96,6 @@
   }
 }</component>
   <component name="RunManager" selected="CMake Application.lab_02">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="copy_data_files" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab_02" TARGET_NAME="copy_data_files" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -133,6 +121,8 @@
       <updated>1744483719999</updated>
       <workItem from="1744483720817" duration="1421000" />
       <workItem from="1744563130527" duration="7841000" />
+      <workItem from="1744619427930" duration="1376000" />
+      <workItem from="1744725403485" duration="3567000" />
     </task>
     <servers />
   </component>

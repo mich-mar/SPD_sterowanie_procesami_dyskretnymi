@@ -31,7 +31,7 @@ int schragePlaning(std::vector<task> tasks) {
         if (!available.empty()) {
             // Wybór zadania z największym czasem zakończenia (q)
             auto it = std::max_element(available.begin(), available.end(),
-                                  [](const task &a, const task &b) { return a.q < b.q; });
+                                       [](const task &a, const task &b) { return a.q < b.q; });
             task currentTask = *it;
             available.erase(it);
 
@@ -58,7 +58,7 @@ int schragePlaning(std::vector<task> tasks) {
  */
 int schragePreemptivePlaning(std::vector<task> tasks) {
     // Komparator do sortowania zadań według r (rosnąco)
-    auto cmpR = [](const task& a, const task& b) {
+    auto cmpR = [](const task &a, const task &b) {
         return a.r > b.r;
     };
 
@@ -66,20 +66,20 @@ int schragePreemptivePlaning(std::vector<task> tasks) {
     std::priority_queue<task, std::vector<task>, decltype(cmpR)> N(cmpR);
 
     // Dodaj wszystkie zadania do kolejki N
-    for (auto& t : tasks) {
+    for (auto &t: tasks) {
         N.push(t);
     }
 
     // Komparator do sortowania zadań według q (malejąco)
-    auto cmpQ = [](const task& a, const task& b) {
+    auto cmpQ = [](const task &a, const task &b) {
         return a.q < b.q;
     };
 
     // Kolejka priorytetowa G (zadania gotowe do wykonania), sortowana po największym q
     std::priority_queue<task, std::vector<task>, decltype(cmpQ)> G(cmpQ);
 
-    int t = 0;               // Aktualny czas
-    int Cmax = 0;            // Wynik: maksymalny czas zakończenia
+    int t = 0; // Aktualny czas
+    int Cmax = 0; // Wynik: maksymalny czas zakończenia
     task current = {0, 0, INT_MAX}; // Aktualnie wykonywane zadanie (na początku żadne)
 
     // Główna pętla: wykonuj, dopóki są zadania gotowe lub oczekujące
@@ -93,7 +93,7 @@ int schragePreemptivePlaning(std::vector<task> tasks) {
             // Jeśli nowe zadanie ma większe q niż aktualnie wykonywane, wywłaszczamy
             if (e.q > current.q) {
                 current.p = t - e.r; // przelicz pozostały czas aktualnego zadania
-                t = e.r;             // cofamy czas do momentu nadejścia nowego zadania
+                t = e.r; // cofamy czas do momentu nadejścia nowego zadania
                 if (current.p > 0) {
                     G.push(current); // dodajemy przerwane zadanie z powrotem do G
                 }
@@ -119,5 +119,3 @@ int schragePreemptivePlaning(std::vector<task> tasks) {
 
     return Cmax;
 }
-
-
