@@ -6,6 +6,6 @@
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Data will be copied to directory: $<TARGET_FILE_DIR:scheduler>/data
--- Configuring done (0.3s)
+-- Configuring done (0.2s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/michal/Documents/studia/sem_6/SPD_sterowanie_procesami_dyskretnymi/temat_03/cmake-build-debug

@@ -1,15 +1,6 @@
-/**
- * @file task.cpp
- * @brief Implementacja funkcji do zarządzania zadaniami.
- *
- * Ten plik źródłowy zawiera implementacje funkcji deklarowanych w task.h,
- * w tym funkcji do wczytywania zadań z pliku i ich wyświetlania.
- */
-
 #include "../inc/task.h"
 #include <iostream>
 #include <fstream>
-
 /**
  * @brief Wczytuje dane zadań z pliku
  *
