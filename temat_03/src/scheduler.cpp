@@ -139,7 +139,8 @@ std::vector<std::vector<task>> schedule_tasks_bruteforce(const std::vector<task>
 std::vector<std::vector<task>> schedule_tasks_dp(const std::vector<task> &tasks) {
     // Sumujemy czasy wszystkich zadań, aby poznać całkowity czas do rozdzielenia
     int total_time = 0;
-    for (const auto &t: tasks) total_time += t.p_time;
+    for (const auto &t: tasks)
+        total_time += t.p_time;
 
     int n = tasks.size();  // liczba wszystkich zadań
     // Obliczamy cel - idealnie byłoby podzielić całkowity czas na pół
